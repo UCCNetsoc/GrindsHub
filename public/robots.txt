@@ -1,0 +1,7 @@
+User-agent: *
+Disallow: /images/
+Disallow: /payments/
+Disallow: /css/
+Disallow: /js/
+Disallow: /fonts/
+Disallow: /wp-content/

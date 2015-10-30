@@ -1,0 +1,60 @@
+header{
+	img{
+		width: 120px;
+		margin: 8px 0px 0px 15px;
+	}
+
+	figure{
+		padding: 0;
+		margin: 0;
+	}
+}
+
+
+
+
+nav{
+	background: #039be5;
+
+	ul li.login:hover{
+		background-color: transparent;
+	}
+
+	#payments-dropdown{
+		i{
+			font-size: 1rem;
+			line-height: inherit;
+		}
+
+		&.dropdown-content li{
+			line-height: inherit;
+			width: 250px;
+		}
+		&.dropdown-content li a{
+			padding: 0 15px;
+		}
+
+		&.dropdown-content{
+			z-index: 999;	
+		}
+	}
+}
+
+
+/* DESKTOP ONLY */
+
+@media screen and (min-width: 992px){
+
+}
+
+/* TABLET */
+@media screen and (max-width: 992px) {
+	
+}
+
+/* MOBILE */
+@media screen and (max-width: 600px) {
+	header img{
+		width: 100px;
+	}
+}

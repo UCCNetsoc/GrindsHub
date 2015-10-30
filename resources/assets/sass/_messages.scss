@@ -1,0 +1,34 @@
+#messages{
+	padding-right: 0
+}
+
+.message-thread img{
+	width: 100%;
+}
+
+.message figure{
+	margin: 0;
+}
+
+/* DESKTOP ONLY */
+
+@media screen and (min-width: 992px){
+
+}
+
+/* TABLET */
+@media screen and (max-width: 992px) {
+
+}
+
+/* MOBILE */
+@media screen and (max-width: 600px) {
+
+	#messages{
+		padding-left: 0;
+	}
+
+	.message-thread form .input-field .prefix ~ textarea, .message-thread .input-field .prefix ~ label{
+		margin-left: 0;
+	}
+}

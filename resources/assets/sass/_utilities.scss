@@ -1,0 +1,66 @@
+.sr-only{
+	position: absolute;
+	width: 1px;
+	height: 1px;
+	margin: -1px;
+	padding: 0;
+	overflow: hidden;
+	clip: rect(0, 0, 0, 0);
+	border: 0;
+}
+
+.no-margin{
+	margin: 0;
+}
+
+.no-padding{
+	padding: 0;
+}
+
+.dark-orange{
+	background: #FF6530;
+}
+
+.dark-orange-text{
+	color: #FF6530;
+}
+
+.clear{
+	clear: both;
+}
+
+.center-text{
+	text-align: center;
+}
+
+span.badge.paid, span.badge.unpaid{
+	font-weight: 300;
+	font-size: 0.8rem;
+	color: #fff;
+	background-color: #26a69a;
+	border-radius: 2px;
+}
+
+span.badge.paid:after{
+	content: 'paid';
+}
+
+span.badge.unpaid:after{
+	content: 'unpaid';
+}
+
+/* DESKTOP ONLY */
+
+@media screen and (min-width: 992px){
+
+}
+
+/* TABLET */
+@media screen and (max-width: 992px) {
+	
+}
+
+/* MOBILE */
+@media screen and (max-width: 600px) {
+	
+}

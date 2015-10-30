@@ -1,0 +1,27 @@
+aside{
+	&#payments{
+		@include vendor-prefix(box-shadow, "0 2px 5px 0 rgba(0,0,0,0),0 2px 10px 0 rgba(0,0,0,0.12)");
+	}
+	
+	&#payments ul li{
+		a{
+			font-weight: 300;
+
+			i{
+				font-size: 1em;
+			}
+		}
+
+		
+
+		&.heading a{
+			font-weight: 500;
+		}
+	}
+
+	
+}
+
+main.payment-content{
+	min-height: 250px;
+}
