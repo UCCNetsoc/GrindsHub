@@ -1,0 +1,302 @@
+/* General */
+body{
+	background: #FFA22C;
+	font-family:  Helvetica, Arial, sans-serif;
+}
+
+
+ h1,  h2,  h3,  h4,  h5{
+	margin: 0;
+	padding: 0;
+}
+
+h2{
+	font-weight: 400;
+}
+
+h3{
+	color: #4B4B4B;
+	font-size: 1.6em;
+}
+
+/*	Utilities */
+.sr-only{
+	position: absolute;
+	width: 1px;
+	height: 1px;
+	margin: -1px;
+	padding: 0;
+	overflow: hidden;
+	clip: rect(0, 0, 0, 0);
+	border: 0;
+}
+
+.no-margin{
+	margin: 0;
+}
+
+.no-padding{
+	padding: 0;
+}
+
+
+
+
+/* Header */
+header img{
+	width: 120px;
+	margin: 8px 0px 0px 15px;
+}
+
+header figure{
+	padding: 0;
+	margin: 0;
+}
+
+nav{
+	background: #039be5;
+}
+
+nav ul li.login:hover{
+	background-color: transparent;
+}
+
+
+/* Search */
+.search .card .card-image{
+	background: black;
+	line-height: 0
+}
+
+.search .card .card-image img{
+	opacity: 0.5;
+}
+
+/* Footer */
+
+/* Home Page */
+
+/* Profile Page */
+
+.cover-photo{
+	padding: 10px 0 10px;
+	min-height: 400px;
+	/* Don't want it to go TOO far */
+	max-height: 1080px;
+	color: #fff;
+	position: relative;
+	text-align: center;
+	display: block;
+	position: relative;
+	z-index: -1;
+}
+
+.cover-photo:before{
+	content: ' ';
+	display: block;
+	position: absolute;
+	left: 0;
+	top: 0;
+	width: 100%;
+	height: 100%;
+	z-index: 0;
+	opacity: 1;
+}
+
+main .profile{
+	-webkit-box-shadow: 0 2px 5px 0 rgba(0,0,0,0.16),0 2px 10px 0 rgba(0,0,0,0.12);
+	-moz-box-shadow: 0 2px 5px 0 rgba(0,0,0,0.16),0 2px 10px 0 rgba(0,0,0,0.12);
+	box-shadow: 0 2px 5px 0 rgba(0,0,0,0.16),0 2px 10px 0 rgba(0,0,0,0.12);
+}
+
+
+.profile{
+	margin-top: -150px;
+	background: -webkit-linear-gradient(rgba( 255, 255, 255, 0.9 ), white); /* For Safari 5.1 to 6.0 */
+	background: -o-linear-gradient(rgba( 255, 255, 255, 0.9 ), white); /* For Opera 11.1 to 12.0 */
+	background: -moz-linear-gradient(rgba( 255, 255, 255, 0.9 ), white); /* For Firefox 3.6 to 15 */
+	background: linear-gradient(rgba( 255, 255, 255, 0.9 ), white); /* Standard syntax */
+}
+
+
+figure.profile-picture{
+	margin: 0;
+}
+
+.profile img{
+	margin:0;
+	width: 100%;
+}
+
+.ne, .nw{
+	display:block;
+	height:50px;
+	width:160px;
+	margin:0 auto;
+	-webkit-transform-origin:right top;
+	-moz-transform-origin:right top;
+	background: #FFA22C;
+
+}
+.ne{
+	-webkit-transform:skewY(-24deg);
+	-moz-transform:skewY(-24deg);
+	margin:20px auto -72px;
+}
+.nw{
+	-webkit-transform:skewY(0deg);
+	-moz-transform:skewY(0deg);
+}
+
+.info{
+	margin-bottom: 20px;
+}
+
+.primary{
+	background:#FF6530;
+}
+
+.primary p{
+	line-height: 1.25;
+  	color: rgba( 255, 255, 255, 1 );
+  	padding: 10px;
+  	font-size: 1.5em;
+  	text-align: center;
+  	font-weight: 300;
+}
+
+.primary p small{
+	font-size: 60%;
+}
+
+.primary.contact{
+	margin-top: 23px;
+}
+
+.primary.contact p{
+	margin-top: 7px;
+	font-size: 1em;
+	text-transform: none;
+}
+	
+.final{
+	background: none;
+}
+
+
+.profile .subjects.row{
+	padding: 0px 10px; 
+}
+
+.profile .subjects a{
+	text-decoration: none;
+	color: rgb(41, 128, 185);
+}
+
+.profile .subjects a:hover{
+	color: rgb(34, 102, 147);
+}
+
+.user-reviews{
+	margin: 15px auto;
+}
+
+.user-reviews h2{
+	font-size: 2.3em;
+}
+
+.user-reviews h4{
+	font-size: 1.4em;
+	margin-left: 10px;
+	color: #4B4B4B;
+}
+
+.user-reviews h2, .user-reviews h4{
+	display: inline;
+}
+
+.user-reviews img{
+	width: 100%;
+}
+
+.user-reviews figure.picture{
+	margin: 8px 0px 8px 10px;
+}
+
+.user-reviews .score{
+	margin-top: 55px;
+	font-size: 2.2em;
+	text-align: center;
+	padding-left: 5px;
+	margin-left: 0;
+}
+
+.user-reviews .stats{
+	text-align: center;
+	margin: 10px 0;
+	padding-top: 10px;
+}
+
+
+/* Search Pages */
+
+
+/* TABLET */
+@media screen and (max-width: 992px) {
+	/* General */
+
+
+	/*	Utilities */
+
+
+
+	/* Header */
+
+
+	/* Main */
+
+
+	/* Footer */
+
+	/* Home Page */
+
+	/* Profile Page */
+
+	/* Search Pages */
+}
+
+/* MOBILE */
+@media screen and (max-width: 600px) {
+	/* General */
+
+
+	/*	Utilities */
+
+
+
+	/* Header */
+
+	header img{
+		width: 100px;
+	}
+
+
+	/* Main */
+
+
+	/* Footer */
+
+	/* Home Page */
+
+	/* Profile Page */
+
+	.profile{
+		width: 85%;
+		padding: 5px;
+	}
+
+
+
+
+	/* Search Pages */
+}
