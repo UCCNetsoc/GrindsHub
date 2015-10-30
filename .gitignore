@@ -2,3 +2,8 @@
 .env.*.php
 .env.php
 .env
+.vagrant/
+/vendor
+/node_modules
+composer.lock
+public/css/app*
