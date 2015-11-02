@@ -167,7 +167,7 @@
 				<footer>
 					
 					<ul class="copyright">
-						<li>&copy; Grindshub {{ date('Y') }}</li><li><a href="mailto:esincork@gmail.com">esincork@gmail.com</a></li>
+						<li>&copy; Grindshub {{ date('Y') }}</li><li><a href="mailto:{{env('DEV_EMAIL')}}">{{env('DEV_EMAIL')}}</a></li>
 					</ul>
 				</footer>
 			</section>

@@ -20,7 +20,7 @@
 			{{ $invoice->sender->first_name  }}'s profile
 		</a>
 
-		 and let your friends know about them. Other than that, have a good day and if you have any questions, send me an email at <a href="mailto:esincork@gmail.com">esincork@gmail.com</a>.
+		 and let your friends know about them. Other than that, have a good day and if you have any questions, send me an email at <a href="mailto:{{env('DEV_EMAIL')}}">{{env('DEV_EMAIL')}}</a>.
 	</p>
 
 	<div class="right">

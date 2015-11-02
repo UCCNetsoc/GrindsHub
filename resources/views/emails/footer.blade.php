@@ -28,7 +28,7 @@
                                                     <a href="https://facebook.com/GrindsHub"><img src="http://www.emailonacid.com/images/emails/5_13/footer_fb.gif" width="42" height="42" alt="Facebook" title="Facebook" border="0" /></a>
                                                     <br />
 
-                                                    <a href="mailto:esincork@gmail.com" style="text-decoration: none; color: #848484; font-weight: normal;">esincork@gmail.com</a>
+                                                    <a href="mailto:{{env('DEV_EMAIL')}}" style="text-decoration: none; color: #848484; font-weight: normal;">{{env('DEV_EMAIL')}}</a>
                                                 </td>
                                             </tr>
                                         </table>   

@@ -109,7 +109,7 @@ class PaymentController extends Controller
 				return Redirect::back( )->withErrors( ['message' => 'Invalid Request Error: ' .$e->getMessage( ) ] );
 			} catch (Error\Api $e) {
 			    // Stripe's servers are down!
-				return Redirect::back( )->withErrors( ['message' => 'Stripe\'s servers are currently down :( Let me know at esincork@gmail.com. Api Error: ' .$e->getMessage( ) ] );
+				return Redirect::back( )->withErrors( ['message' => 'Stripe\'s servers are currently down :( Let me know at '.env("DEV_EMAIL") .'. Api Error: ' .$e->getMessage( ) ] );
 			} catch (Error\Card $e) {
 			    // Card was declined.
 			    return Redirect::back( )->withErrors( ['message' => 'Card error: Your card was declined. '. $e->getMessage( ) ] );
@@ -208,10 +208,10 @@ class PaymentController extends Controller
 			return Redirect::back( )->withErrors( ['message' => 'Network problem, perhaps try again. API Connection Error: ' .$e->getMessage( ) ] );
 		} catch (Error\InvalidRequest $e) {
 		    // You screwed up in your programming. Shouldn't happen!
-			return Redirect::back( )->withErrors( ['message' => 'I fucked up. Let me know at esincork@gmail.com. Invalid Request Error: ' .$e->getMessage( ) ] );
+			return Redirect::back( )->withErrors( ['message' => 'I fucked up. Let me know at '.env("DEV_EMAIL") .'. Invalid Request Error: ' .$e->getMessage( ) ] );
 		} catch (Error\Api $e) {
 		    // Stripe's servers are down!
-			return Redirect::back( )->withErrors( ['message' => 'Stripe\'s servers are currently down :( Let me know at esincork@gmail.com. Api Error: ' .$e->getMessage( ) ] );
+			return Redirect::back( )->withErrors( ['message' => 'Stripe\'s servers are currently down :( Let me know at '.env("DEV_EMAIL") .'. Api Error: ' .$e->getMessage( ) ] );
 		} catch (Error\Card $e) {
 		    // Card was declined.
 		    return Redirect::back( )->withErrors( ['message' => 'Card error: Your card was declined. '. $e->getMessage( ) ] );
@@ -342,10 +342,10 @@ class PaymentController extends Controller
 			return Redirect::back( )->withErrors( ['message' => 'Network problem, perhaps try again. API Connection Error: ' .$e->getMessage( ) ] );
 		} catch (Error\InvalidRequest $e) {
 		    // You screwed up in your programming. Shouldn't happen!
-			return Redirect::back( )->withErrors( ['message' => 'I fucked up. Let me know at esincork@gmail.com. Invalid Request Error: ' .$e->getMessage( ) ] );
+			return Redirect::back( )->withErrors( ['message' => 'I fucked up. Let me know at '.env("DEV_EMAIL") .'. Invalid Request Error: ' .$e->getMessage( ) ] );
 		} catch (Error\Api $e) {
 		    // Stripe's servers are down!
-			return Redirect::back( )->withErrors( ['message' => 'Stripe\'s servers are currently down :( Let me know at esincork@gmail.com. Api Error: ' .$e->getMessage( ) ] );
+			return Redirect::back( )->withErrors( ['message' => 'Stripe\'s servers are currently down :( Let me know at '.env("DEV_EMAIL") .'. Api Error: ' .$e->getMessage( ) ] );
 		} catch (Error\Card $e) {
 		    // Card was declined.
 		    return Redirect::back( )->withErrors( ['message' => 'Card error: Your card was declined. '. $e->getMessage( ) ] );
